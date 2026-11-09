@@ -1,0 +1,6 @@
+[stage2] Changing hermes UID to 1000
+[stage2] Changing hermes GID to 1000
+Done: 0 new, 0 updated, 44 unchanged. 44 total bundled.
+2026-11-09 23:59:13,202 WARNING hermes_plugins.platforms__telegram.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-11-10 04:11:31,027 WARNING hermes_plugins.platforms__telegram.adapter: [Telegram] Connected to Telegram (polling mode)
+hermes   /opt/hermes/.venv/bin/python -P -c import os, site, sys; sys.argv[0]='hermes'; site.addsitedir(os.environ['HERMES_SITE']); from hermes_cli.main import main; sys.exit(main()) gateway run --replace

@@ -1,0 +1,7 @@
+[Unit]
+Description=Remove old Hermes gateway log archives
+
+[Service]
+Type=oneshot
+User=agent
+ExecStart=/usr/bin/find /home/agent/hermes-data/logs/gateways -type f -name @* -mtime +7 -delete

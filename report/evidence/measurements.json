@@ -1,0 +1,1425 @@
+{
+  "runs": [
+    {
+      "id": "1e149d690a7c48999938f4257af9c578",
+      "job_id": "7b374d28ad45",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-09T23:59:14.621555+03:00",
+      "started_at": "2026-11-09T23:59:14.703165+03:00",
+      "finished_at": "2026-11-10T00:00:04.171939+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T20:59:09.016682+00:00",
+      "progress_at": null,
+      "duration_seconds": 49.469,
+      "session": {
+        "id": "local-d288a35bcd6c9b3249faed9bf27b55a4b5c8fc13211656ca0f044d5a63b8bbea",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794257954.746348,
+        "last_activity_at": 1794257956.9920816,
+        "api_call_count": 12,
+        "tool_call_count": 12,
+        "input_tokens": 43859,
+        "output_tokens": 2165,
+        "cache_read_tokens": 165584,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 1394,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "I reached the iteration limit and couldn't generate a summary.",
+      "sources": [
+        {
+          "source_sha256": "42b92cbe9fcb24cea2b87538c7b14a4cecec3261599c7c91aab6aff54321d5bd",
+          "folder": "20261109T205957",
+          "status": "empty",
+          "received": 0,
+          "passed_to_model": 0,
+          "excluded_ids": [],
+          "papers": []
+        },
+        {
+          "source_sha256": "b6af4b0174d832f7adac535e05f5337374423405cd785deb364c4138507b56fc",
+          "folder": "20261109T205955",
+          "status": "empty",
+          "received": 0,
+          "passed_to_model": 0,
+          "excluded_ids": [],
+          "papers": []
+        },
+        {
+          "source_sha256": "ab53ae596a47bf82b0f42f7694b8f0973124d9ea254d2aea20569f30763d976c",
+          "folder": "20261109T205942",
+          "status": "empty",
+          "received": 0,
+          "passed_to_model": 0,
+          "excluded_ids": [],
+          "papers": []
+        }
+      ],
+      "selected_ids": [],
+      "links_in_source": false,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "fcc7684540534e06b554244e482a0f6f",
+      "job_id": "32ca786d7b54",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "failed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T00:06:14.519729+03:00",
+      "started_at": "2026-11-10T00:06:14.536965+03:00",
+      "finished_at": "2026-11-10T00:06:21.709246+03:00",
+      "error": "Blocked: prompt matches threat pattern 'prompt_injection'. Cron prompts must not contain injection or exfiltration payloads.",
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T21:06:09.021427+00:00",
+      "progress_at": null,
+      "duration_seconds": 7.172,
+      "session": {
+        "id": "local-b88fe86a0ec70f3cc263297f7bce7dabe09a5937b122052b17d9bc0a5d22fdc3",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794258374.549679,
+        "last_activity_at": null,
+        "api_call_count": 0,
+        "tool_call_count": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": null
+      },
+      "response": "# Cron Job: paper-digest-validation\n\n**Job ID:** 32ca786d7b54\n**Run Time:** 2026-11-10 00:06:21\n**Status:** BLOCKED\n\nThe assembled prompt (user prompt + loaded skill content) tripped the cron injection scanner and the agent was NOT run.\n\n**Scanner result:** Blocked: prompt matches threat pattern 'prompt_injection'. Cron prompts must not contain injection or exfiltration payloads.\n\nAudit the skill(s) attached to this job for prompt-injection payloads or invisible-unicode markers. If the skill is legitimate and the match is a false positive, rephrase the content to avoid the threat pattern (`tools/cronjob_tools.py::_CRON_THREAT_PATTERNS`).",
+      "sources": [
+        {
+          "source_sha256": "adc70f874f1f785990f1fd453af97eed0030eddacf7dbb0dc29cf722381eee98",
+          "folder": "20261109T210621",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 16,
+          "excluded_ids": [],
+          "papers": [
+            {
+              "id": "2611.09891v1",
+              "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+              "url": "https://arxiv.org/abs/2611.09891v1",
+              "published": "2026-11-06T18:58:50Z"
+            },
+            {
+              "id": "2611.09822v1",
+              "title": "Discovering formally verified quantum programs with AI",
+              "url": "https://arxiv.org/abs/2611.09822v1",
+              "published": "2026-11-06T18:08:06Z"
+            },
+            {
+              "id": "2611.09769v1",
+              "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
+              "url": "https://arxiv.org/abs/2611.09769v1",
+              "published": "2026-11-06T17:31:09Z"
+            },
+            {
+              "id": "2611.09768v1",
+              "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
+              "url": "https://arxiv.org/abs/2611.09768v1",
+              "published": "2026-11-06T17:31:01Z"
+            },
+            {
+              "id": "2611.09734v1",
+              "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
+              "url": "https://arxiv.org/abs/2611.09734v1",
+              "published": "2026-11-06T17:09:55Z"
+            },
+            {
+              "id": "2611.09568v1",
+              "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+              "url": "https://arxiv.org/abs/2611.09568v1",
+              "published": "2026-11-06T15:08:58Z"
+            },
+            {
+              "id": "2611.09472v1",
+              "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+              "url": "https://arxiv.org/abs/2611.09472v1",
+              "published": "2026-11-06T13:51:02Z"
+            },
+            {
+              "id": "2611.09454v1",
+              "title": "From LoRA to Language: Recovering Skill Documents from Adapters",
+              "url": "https://arxiv.org/abs/2611.09454v1",
+              "published": "2026-11-06T13:26:43Z"
+            },
+            {
+              "id": "2611.08834v1",
+              "title": "Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks",
+              "url": "https://arxiv.org/abs/2611.08834v1",
+              "published": "2026-11-06T00:42:08Z"
+            },
+            {
+              "id": "2611.08811v1",
+              "title": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
+              "url": "https://arxiv.org/abs/2611.08811v1",
+              "published": "2026-11-06T00:06:13Z"
+            },
+            {
+              "id": "2611.08428v1",
+              "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+              "url": "https://arxiv.org/abs/2611.08428v1",
+              "published": "2026-11-05T18:22:24Z"
+            },
+            {
+              "id": "2611.07640v1",
+              "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+              "url": "https://arxiv.org/abs/2611.07640v1",
+              "published": "2026-11-05T08:25:27Z"
+            },
+            {
+              "id": "2611.07222v1",
+              "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+              "url": "https://arxiv.org/abs/2611.07222v1",
+              "published": "2026-11-04T23:18:10Z"
+            },
+            {
+              "id": "2611.06682v1",
+              "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.06682v1",
+              "published": "2026-11-04T15:51:30Z"
+            },
+            {
+              "id": "2611.06039v1",
+              "title": "Securing Web Agents with the Compile-Then-Execute Paradigm",
+              "url": "https://arxiv.org/abs/2611.06039v1",
+              "published": "2026-11-04T06:42:35Z"
+            },
+            {
+              "id": "2611.04879v2",
+              "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
+              "url": "https://arxiv.org/abs/2611.04879v2",
+              "published": "2026-11-03T13:31:11Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [],
+      "links_in_source": false,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "ac936866c6dc4c34a8a7d9dac0d28239",
+      "job_id": "b44f71de31f8",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T00:12:14.519031+03:00",
+      "started_at": "2026-11-10T00:12:14.535817+03:00",
+      "finished_at": "2026-11-10T00:16:45.903963+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T21:11:46.278323+00:00",
+      "progress_at": "2026-11-10T00:16:21.838526+03:00",
+      "duration_seconds": 271.368,
+      "session": {
+        "id": "local-2cb86356e10366505d0df60081bb62333f4f0a37a8f321aae4040946f70bec22",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794258734.54615,
+        "last_activity_at": 1794258981.4691722,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 9310,
+        "output_tokens": 18224,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 17444,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "Дата: вторник, 10 ноября 2026 г., 00:12 по Москве (UTC+03:00)\nТемы: автономные LLM-агенты и вызов инструментов; prompt injection и безопасность агентов; генераторы статических сайтов и воспроизводимая публикация результатов исследований\nПросмотрено: 15\nОтобрано: 5\n\n1. CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse\n   Дата публикации: 2026-11-06\n   Ссылка: https://arxiv.org/abs/2611.09891v1\n   Причина выбора: Представляет метод agentic reasoning caching для эффективного применения предыдущих рассуждений к новым задачам LLM-агентов, снижая потребность в перерасчете.\n\n2. GuardrailAgent: An Agentic Framework for Jailbreak Defense\n   Дата публикации: 2026-11-06\n   Ссылка: https://arxiv.org/abs/2611.09734v1\n   Причина выбора: Предлагает многомальтийский фреймворк адаптивной защиты от джейбрейков с непрерывно обновляемой базой знаний атак и высоким уровнем обнаружения (93.1% input-side).\n\n3. Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks\n   Дата публикации: 2026-11-05\n   Ссылка: https://arxiv.org/abs/2611.07640v1\n   Причина выбора: Вводит классификацию IPI по авторитету вместо инструкционного Wortung, benchmarking таск-тампер잉 атак через 90 валидированных кейсов across five LLMs.\n\n4. SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents\n   Дата публикации: 2026-11-04\n   Ссылка: https://arxiv.org/abs/2611.06682v1\n   Причина выбора: Достигает 0% attack success rate (ASR) по трем бенчмаркам (AgentDojo, ASB, AgentDyn) с помощью динамической онтологии, связывающей вызовы в общем представлении.\n\n5. Securing Web Agents with the Compile-Then-Execute Paradigm\n   Дата публикации: 2026-11-04\n   Ссылка: https://arxiv.org/abs/2611.06039v1\n   Причина wybora: Предлагает парадигму compile-then-execute для веб-агентов, разделяющую планирование от live content, что повышает воспроизводимость исследований веб-агентов.\n\nВажно: Данные неполные. Входной JSON отмечен как `incomplete=true`, что означает, что часть записей пропущена при проверке данных или часть запросов не прошла полностью. Отобранные статьи слабо покрывают тему «генераторы статических сайтов и воспроизводимая публикация результатов исследований», что следует учитывать при будущем мониторинге.",
+      "sources": [
+        {
+          "source_sha256": "79892897ad009ba8d04020f7c3e60a99d18c6c512fd1e6e34508eb7f7372f72d",
+          "folder": "20261109T211221",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 15,
+          "excluded_ids": [
+            "2611.08834v1"
+          ],
+          "papers": [
+            {
+              "id": "2611.09891v1",
+              "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+              "url": "https://arxiv.org/abs/2611.09891v1",
+              "published": "2026-11-06T18:58:50Z"
+            },
+            {
+              "id": "2611.09822v1",
+              "title": "Discovering formally verified quantum programs with AI",
+              "url": "https://arxiv.org/abs/2611.09822v1",
+              "published": "2026-11-06T18:08:06Z"
+            },
+            {
+              "id": "2611.09769v1",
+              "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
+              "url": "https://arxiv.org/abs/2611.09769v1",
+              "published": "2026-11-06T17:31:09Z"
+            },
+            {
+              "id": "2611.09768v1",
+              "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
+              "url": "https://arxiv.org/abs/2611.09768v1",
+              "published": "2026-11-06T17:31:01Z"
+            },
+            {
+              "id": "2611.09734v1",
+              "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
+              "url": "https://arxiv.org/abs/2611.09734v1",
+              "published": "2026-11-06T17:09:55Z"
+            },
+            {
+              "id": "2611.09568v1",
+              "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+              "url": "https://arxiv.org/abs/2611.09568v1",
+              "published": "2026-11-06T15:08:58Z"
+            },
+            {
+              "id": "2611.09472v1",
+              "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+              "url": "https://arxiv.org/abs/2611.09472v1",
+              "published": "2026-11-06T13:51:02Z"
+            },
+            {
+              "id": "2611.09454v1",
+              "title": "From LoRA to Language: Recovering Skill Documents from Adapters",
+              "url": "https://arxiv.org/abs/2611.09454v1",
+              "published": "2026-11-06T13:26:43Z"
+            },
+            {
+              "id": "2611.08811v1",
+              "title": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
+              "url": "https://arxiv.org/abs/2611.08811v1",
+              "published": "2026-11-06T00:06:13Z"
+            },
+            {
+              "id": "2611.08428v1",
+              "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+              "url": "https://arxiv.org/abs/2611.08428v1",
+              "published": "2026-11-05T18:22:24Z"
+            },
+            {
+              "id": "2611.07640v1",
+              "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+              "url": "https://arxiv.org/abs/2611.07640v1",
+              "published": "2026-11-05T08:25:27Z"
+            },
+            {
+              "id": "2611.07222v1",
+              "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+              "url": "https://arxiv.org/abs/2611.07222v1",
+              "published": "2026-11-04T23:18:10Z"
+            },
+            {
+              "id": "2611.06682v1",
+              "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.06682v1",
+              "published": "2026-11-04T15:51:30Z"
+            },
+            {
+              "id": "2611.06039v1",
+              "title": "Securing Web Agents with the Compile-Then-Execute Paradigm",
+              "url": "https://arxiv.org/abs/2611.06039v1",
+              "published": "2026-11-04T06:42:35Z"
+            },
+            {
+              "id": "2611.04879v2",
+              "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
+              "url": "https://arxiv.org/abs/2611.04879v2",
+              "published": "2026-11-03T13:31:11Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [
+        "2611.09891v1",
+        "2611.09734v1",
+        "2611.07640v1",
+        "2611.06682v1",
+        "2611.06039v1"
+      ],
+      "links_in_source": true,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "ac48ed09c3b548338794b2b54836e311",
+      "job_id": "60b966af845d",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T00:18:14.519304+03:00",
+      "started_at": "2026-11-10T00:18:14.536367+03:00",
+      "finished_at": "2026-11-10T00:18:29.700206+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T21:17:51.299138+00:00",
+      "progress_at": null,
+      "duration_seconds": 15.164,
+      "session": {
+        "id": "local-d5aa214f05a563c76f7812faf634c41d01aed80780ff3f960fa4ea3baaa437f1",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794259094.548858,
+        "last_activity_at": 1794259101.3033674,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 9318,
+        "output_tokens": 434,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "2026-11-10 — дайджест пяти статей из трёх запросов arXiv (всего просмотрено 53, отобрано 5). incomplete: часть запросов не прошла проверку отбора.\n\n1. **CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse** (2026-11-06) — предлагает метод кэширования выводов LLM для многократного повторного использования на ЦП, экономя до 291× ресурсов при сохранении производительности.\n2. **Discovering formally verified quantum programs with AI** (2026-11-06) — демонстрирует автоматический синтез квантовых программ в Lean с формальной верификацией, достигая порядковых улучшений в научных приложениях.\n3. **Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents** (2026-11-06) — исследует, как вариации языка и вежливости влияют на поведение агентов в Werewolf-игры; эффектов на доверие и голосование не выявлено.\n4. **GuardrailAgent: An Agentic Framework for Jailbreak Defense** (2026-11-06) — предлагает многократный агентный фреймворк для защиты от jailbreak-атак с детектированием на входе (93.1%) и выводе (93.9%).\n5. **Alignment by Confident Debate: Preference Learning from Multi-Agent Debate** (2026-11-06) — конвертирует дискуссии агентов в предпочтения для дообучения без необходимостиgold-ответов, показывая до 21.5 pp улучшения консенсуса.",
+      "sources": [
+        {
+          "source_sha256": "ed28c3d666daba3519833a2da0648b1147f5f727c26f91c27c005b8bece3d5de",
+          "folder": "20261109T211821",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 15,
+          "excluded_ids": [
+            "2611.08834v1"
+          ],
+          "papers": [
+            {
+              "id": "2611.09891v1",
+              "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+              "url": "https://arxiv.org/abs/2611.09891v1",
+              "published": "2026-11-06T18:58:50Z"
+            },
+            {
+              "id": "2611.09822v1",
+              "title": "Discovering formally verified quantum programs with AI",
+              "url": "https://arxiv.org/abs/2611.09822v1",
+              "published": "2026-11-06T18:08:06Z"
+            },
+            {
+              "id": "2611.09769v1",
+              "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
+              "url": "https://arxiv.org/abs/2611.09769v1",
+              "published": "2026-11-06T17:31:09Z"
+            },
+            {
+              "id": "2611.09768v1",
+              "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
+              "url": "https://arxiv.org/abs/2611.09768v1",
+              "published": "2026-11-06T17:31:01Z"
+            },
+            {
+              "id": "2611.09734v1",
+              "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
+              "url": "https://arxiv.org/abs/2611.09734v1",
+              "published": "2026-11-06T17:09:55Z"
+            },
+            {
+              "id": "2611.09568v1",
+              "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+              "url": "https://arxiv.org/abs/2611.09568v1",
+              "published": "2026-11-06T15:08:58Z"
+            },
+            {
+              "id": "2611.09472v1",
+              "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+              "url": "https://arxiv.org/abs/2611.09472v1",
+              "published": "2026-11-06T13:51:02Z"
+            },
+            {
+              "id": "2611.09454v1",
+              "title": "From LoRA to Language: Recovering Skill Documents from Adapters",
+              "url": "https://arxiv.org/abs/2611.09454v1",
+              "published": "2026-11-06T13:26:43Z"
+            },
+            {
+              "id": "2611.08811v1",
+              "title": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
+              "url": "https://arxiv.org/abs/2611.08811v1",
+              "published": "2026-11-06T00:06:13Z"
+            },
+            {
+              "id": "2611.08428v1",
+              "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+              "url": "https://arxiv.org/abs/2611.08428v1",
+              "published": "2026-11-05T18:22:24Z"
+            },
+            {
+              "id": "2611.07640v1",
+              "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+              "url": "https://arxiv.org/abs/2611.07640v1",
+              "published": "2026-11-05T08:25:27Z"
+            },
+            {
+              "id": "2611.07222v1",
+              "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+              "url": "https://arxiv.org/abs/2611.07222v1",
+              "published": "2026-11-04T23:18:10Z"
+            },
+            {
+              "id": "2611.06682v1",
+              "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.06682v1",
+              "published": "2026-11-04T15:51:30Z"
+            },
+            {
+              "id": "2611.06039v1",
+              "title": "Securing Web Agents with the Compile-Then-Execute Paradigm",
+              "url": "https://arxiv.org/abs/2611.06039v1",
+              "published": "2026-11-04T06:42:35Z"
+            },
+            {
+              "id": "2611.04879v2",
+              "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
+              "url": "https://arxiv.org/abs/2611.04879v2",
+              "published": "2026-11-03T13:31:11Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [],
+      "links_in_source": false,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "c9f287ba57e74ef2bcb31d1203a59e01",
+      "job_id": "60b966af845d",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T00:20:14.519562+03:00",
+      "started_at": "2026-11-10T00:20:14.535759+03:00",
+      "finished_at": "2026-11-10T00:20:27.695125+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T21:19:29.694870+00:00",
+      "progress_at": null,
+      "duration_seconds": 13.159,
+      "session": {
+        "id": "local-d61303f3fd06fcd6ce097ed8349b6c52249f429ced00aa0d07756ccc593f86f3",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794259214.54584,
+        "last_activity_at": 1794259221.293489,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 9318,
+        "output_tokens": 419,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "2026-11-10\n\nДайджест (3 из 5 запросов). Просмотрено 15 статей, отобрано 3.\n\n1. **CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse**\n   - Дата: 2026-11-06\n   - arxiv: https://arxiv.org/abs/2611.09891v1\n   - Выбрана: Метод кэширования агентского рассуждения дает 16–291x удешевление вызова LLM при многократном решении задач, что напрямую касается эффективности автономных агентов.\n\n2. **Discovering formally verified quantum programs with AI**\n   - Дата: 2026-11-06\n   - arxiv: https://arxiv.org/abs/2611.09822v1\n   - Выбрана: Демонстрация автоматического поиска квантовых программ с верификацией в Lean — важный кейс для инструментов, проверяющих правильность кода агентов.\n\n3. **GuardrailAgent: An Agentic Framework for Jailbreak Defense**\n   - Дата: 2026-11-06\n   - arxiv: https://arxiv.org/abs/2611.09768v1\n   - Выбрана: Framework с 93%+ detection rate jailbreak-атак — критически важен для безопасности автономных агентов.\n\n---\n\n`incomplete=true`: часть запросов не прошла проверку (3 запроса из 5, плюс некоторые статьи могли быть исключены за несоответствие тематике). All: queries processed but filtering left only 3 matching the defined topics.",
+      "sources": [
+        {
+          "source_sha256": "71ab4d26affa65e94a96c024557cb637dfa28fda75625b8b51ecdc6eed51da9b",
+          "folder": "20261109T212021",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 15,
+          "excluded_ids": [
+            "2611.08834v1"
+          ],
+          "papers": [
+            {
+              "id": "2611.09891v1",
+              "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+              "url": "https://arxiv.org/abs/2611.09891v1",
+              "published": "2026-11-06T18:58:50Z"
+            },
+            {
+              "id": "2611.09822v1",
+              "title": "Discovering formally verified quantum programs with AI",
+              "url": "https://arxiv.org/abs/2611.09822v1",
+              "published": "2026-11-06T18:08:06Z"
+            },
+            {
+              "id": "2611.09769v1",
+              "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
+              "url": "https://arxiv.org/abs/2611.09769v1",
+              "published": "2026-11-06T17:31:09Z"
+            },
+            {
+              "id": "2611.09768v1",
+              "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
+              "url": "https://arxiv.org/abs/2611.09768v1",
+              "published": "2026-11-06T17:31:01Z"
+            },
+            {
+              "id": "2611.09734v1",
+              "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
+              "url": "https://arxiv.org/abs/2611.09734v1",
+              "published": "2026-11-06T17:09:55Z"
+            },
+            {
+              "id": "2611.09568v1",
+              "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+              "url": "https://arxiv.org/abs/2611.09568v1",
+              "published": "2026-11-06T15:08:58Z"
+            },
+            {
+              "id": "2611.09472v1",
+              "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+              "url": "https://arxiv.org/abs/2611.09472v1",
+              "published": "2026-11-06T13:51:02Z"
+            },
+            {
+              "id": "2611.09454v1",
+              "title": "From LoRA to Language: Recovering Skill Documents from Adapters",
+              "url": "https://arxiv.org/abs/2611.09454v1",
+              "published": "2026-11-06T13:26:43Z"
+            },
+            {
+              "id": "2611.08811v1",
+              "title": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
+              "url": "https://arxiv.org/abs/2611.08811v1",
+              "published": "2026-11-06T00:06:13Z"
+            },
+            {
+              "id": "2611.08428v1",
+              "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+              "url": "https://arxiv.org/abs/2611.08428v1",
+              "published": "2026-11-05T18:22:24Z"
+            },
+            {
+              "id": "2611.07640v1",
+              "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+              "url": "https://arxiv.org/abs/2611.07640v1",
+              "published": "2026-11-05T08:25:27Z"
+            },
+            {
+              "id": "2611.07222v1",
+              "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+              "url": "https://arxiv.org/abs/2611.07222v1",
+              "published": "2026-11-04T23:18:10Z"
+            },
+            {
+              "id": "2611.06682v1",
+              "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.06682v1",
+              "published": "2026-11-04T15:51:30Z"
+            },
+            {
+              "id": "2611.06039v1",
+              "title": "Securing Web Agents with the Compile-Then-Execute Paradigm",
+              "url": "https://arxiv.org/abs/2611.06039v1",
+              "published": "2026-11-04T06:42:35Z"
+            },
+            {
+              "id": "2611.04879v2",
+              "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
+              "url": "https://arxiv.org/abs/2611.04879v2",
+              "published": "2026-11-03T13:31:11Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [
+        "2611.09891v1",
+        "2611.09822v1",
+        "2611.09768v1"
+      ],
+      "links_in_source": true,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "6b92741908cf428f8556514b1126c611",
+      "job_id": "60b966af845d",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T00:22:14.519892+03:00",
+      "started_at": "2026-11-10T00:22:14.535567+03:00",
+      "finished_at": "2026-11-10T00:22:27.695620+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-09T21:21:27.690925+00:00",
+      "progress_at": null,
+      "duration_seconds": 13.16,
+      "session": {
+        "id": "local-afebc3419c74d048a8ccbab28dbe15da38792ae6a809e9f9caecb65c9dcb06ec",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794259334.546273,
+        "last_activity_at": 1794259341.2866755,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 9318,
+        "output_tokens": 421,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "2026-11-10 00:22 MSK: paper-digest — 5 из 7 запросов дал статьи, 2 полностью отсеяны по смыслу. Просмотрено 12, отобрано 5.\n\n- **CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse** (2026-11-06) — Введение кэша агентского рассуждения для переиспользования трассировок LLM; уменьшение затрат на 16–291× при сохранении качества.\n- **Discovering formally verified quantum programs with AI** (2026-11-06) — Автоматическое синтез квантовых программ в Lean с формальной верификацией; улучшения до 290× по арифметике и 11× по симуляциям.\n- **GuardrailAgent: An Agentic Framework for Jailbreak Defense** (2026-11-06) — Многоагентная система защиты от джейбрейков с обновляемой знанием об атаках; 93%+ taux обнаружения.\n- **SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection** (2026-11-04) — Детерминистская санитизация на основе возвращаемых инструментами полей; блокирует стандартные инъекции действий.\n- **SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents** (2026-11-04) — Онтология-based governance с 0% attack success rate на AgentDojo/ASB/AgentDyn; динамическая онтология из verified training.executions.",
+      "sources": [
+        {
+          "source_sha256": "b393b2422c3ce83664b9efe8c052f42c6fb94cf8d0ad8a274cf898b8c114a384",
+          "folder": "20261109T212221",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 15,
+          "excluded_ids": [
+            "2611.08834v1"
+          ],
+          "papers": [
+            {
+              "id": "2611.09891v1",
+              "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
+              "url": "https://arxiv.org/abs/2611.09891v1",
+              "published": "2026-11-06T18:58:50Z"
+            },
+            {
+              "id": "2611.09822v1",
+              "title": "Discovering formally verified quantum programs with AI",
+              "url": "https://arxiv.org/abs/2611.09822v1",
+              "published": "2026-11-06T18:08:06Z"
+            },
+            {
+              "id": "2611.09769v1",
+              "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
+              "url": "https://arxiv.org/abs/2611.09769v1",
+              "published": "2026-11-06T17:31:09Z"
+            },
+            {
+              "id": "2611.09768v1",
+              "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
+              "url": "https://arxiv.org/abs/2611.09768v1",
+              "published": "2026-11-06T17:31:01Z"
+            },
+            {
+              "id": "2611.09734v1",
+              "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
+              "url": "https://arxiv.org/abs/2611.09734v1",
+              "published": "2026-11-06T17:09:55Z"
+            },
+            {
+              "id": "2611.09568v1",
+              "title": "Alignment by Confident Debate: Preference Learning from Multi-Agent Debate",
+              "url": "https://arxiv.org/abs/2611.09568v1",
+              "published": "2026-11-06T15:08:58Z"
+            },
+            {
+              "id": "2611.09472v1",
+              "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+              "url": "https://arxiv.org/abs/2611.09472v1",
+              "published": "2026-11-06T13:51:02Z"
+            },
+            {
+              "id": "2611.09454v1",
+              "title": "From LoRA to Language: Recovering Skill Documents from Adapters",
+              "url": "https://arxiv.org/abs/2611.09454v1",
+              "published": "2026-11-06T13:26:43Z"
+            },
+            {
+              "id": "2611.08811v1",
+              "title": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
+              "url": "https://arxiv.org/abs/2611.08811v1",
+              "published": "2026-11-06T00:06:13Z"
+            },
+            {
+              "id": "2611.08428v1",
+              "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+              "url": "https://arxiv.org/abs/2611.08428v1",
+              "published": "2026-11-05T18:22:24Z"
+            },
+            {
+              "id": "2611.07640v1",
+              "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+              "url": "https://arxiv.org/abs/2611.07640v1",
+              "published": "2026-11-05T08:25:27Z"
+            },
+            {
+              "id": "2611.07222v1",
+              "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+              "url": "https://arxiv.org/abs/2611.07222v1",
+              "published": "2026-11-04T23:18:10Z"
+            },
+            {
+              "id": "2611.06682v1",
+              "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.06682v1",
+              "published": "2026-11-04T15:51:30Z"
+            },
+            {
+              "id": "2611.06039v1",
+              "title": "Securing Web Agents with the Compile-Then-Execute Paradigm",
+              "url": "https://arxiv.org/abs/2611.06039v1",
+              "published": "2026-11-04T06:42:35Z"
+            },
+            {
+              "id": "2611.04879v2",
+              "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
+              "url": "https://arxiv.org/abs/2611.04879v2",
+              "published": "2026-11-03T13:31:11Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [],
+      "links_in_source": false,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "84c2989767e24de8a7ba563c23771938",
+      "job_id": "d746a6ed2eff",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T21:20:14.523527+03:00",
+      "started_at": "2026-11-10T21:20:14.541587+03:00",
+      "finished_at": "2026-11-10T21:20:27.707625+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-10T18:20:12.547290+00:00",
+      "progress_at": null,
+      "duration_seconds": 13.166,
+      "session": {
+        "id": "local-5df636b10b6e1ae73ca3df45f228a7eb1eb9b643da3e9761c84c96e8d3fc6c23",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794334814.553512,
+        "last_activity_at": 1794334822.985322,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 10444,
+        "output_tokens": 258,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "Проанализировал JSON: 22 статьи, 145 дней охвата нет, окно 7 дней. Выбираю 3 статьи, соответствующие темам.\n\nНазвание: WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems\nДата: 2026-11-09\nСсылка: https://arxiv.org/abs/2611.12856v1\nТема: LLM-агенты и инструменты\n\nНазвание: Mitigating Agentic Deception via Evaluation-Side Partially Observable Games\nДата: 2026-11-09\nСсылка: https://arxiv.org/abs/2611.12835v1\nТема: Безопасность агентов\n\nНазвание: Predictability of Collective Behavior in Networks of LLM Agents\nДата: 2026-11-09\nСсылка: https://arxiv.org/abs/2611.12256v1\nТема: LLM-агенты и инструменты",
+      "sources": [
+        {
+          "source_sha256": "d4892b0100de754f0d433f5949ac2a02b32b3c2fe1f956624985b45540f5cb11",
+          "folder": "20261110T182022",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 16,
+          "excluded_ids": [],
+          "papers": [
+            {
+              "id": "2611.12856v1",
+              "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2611.12856v1",
+              "published": "2026-11-09T18:45:28Z"
+            },
+            {
+              "id": "2611.12835v1",
+              "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+              "url": "https://arxiv.org/abs/2611.12835v1",
+              "published": "2026-11-09T18:33:13Z"
+            },
+            {
+              "id": "2611.12728v1",
+              "title": "Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards",
+              "url": "https://arxiv.org/abs/2611.12728v1",
+              "published": "2026-11-09T17:14:40Z"
+            },
+            {
+              "id": "2611.12545v1",
+              "title": "Teamknitt: Configuring, Observing and Intervening in LLM-Agent Teams through the Lens of Dynamical-Systems and Human-Team Theory",
+              "url": "https://arxiv.org/abs/2611.12545v1",
+              "published": "2026-11-09T15:15:39Z"
+            },
+            {
+              "id": "2611.12412v1",
+              "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+              "url": "https://arxiv.org/abs/2611.12412v1",
+              "published": "2026-11-09T13:43:52Z"
+            },
+            {
+              "id": "2611.12256v1",
+              "title": "Predictability of Collective Behavior in Networks of LLM Agents",
+              "url": "https://arxiv.org/abs/2611.12256v1",
+              "published": "2026-11-09T11:47:33Z"
+            },
+            {
+              "id": "2611.12222v1",
+              "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+              "url": "https://arxiv.org/abs/2611.12222v1",
+              "published": "2026-11-09T11:16:03Z"
+            },
+            {
+              "id": "2611.12167v1",
+              "title": "FraudBench: A Legal Evaluation of AI Deception",
+              "url": "https://arxiv.org/abs/2611.12167v1",
+              "published": "2026-11-09T10:22:25Z"
+            },
+            {
+              "id": "2611.12521v1",
+              "title": "Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models",
+              "url": "https://arxiv.org/abs/2611.12521v1",
+              "published": "2026-11-09T14:58:53Z"
+            },
+            {
+              "id": "2611.12386v1",
+              "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+              "url": "https://arxiv.org/abs/2611.12386v1",
+              "published": "2026-11-09T13:27:13Z"
+            },
+            {
+              "id": "2611.11971v1",
+              "title": "Harness Matters: Measuring and Dissecting Security Resilience in Web Agents",
+              "url": "https://arxiv.org/abs/2611.11971v1",
+              "published": "2026-11-09T06:53:04Z"
+            },
+            {
+              "id": "2611.11861v1",
+              "title": "Scaling Adaptive Prompt Injection Attacks with Agent Swarms",
+              "url": "https://arxiv.org/abs/2611.11861v1",
+              "published": "2026-11-09T04:34:14Z"
+            },
+            {
+              "id": "2611.11571v1",
+              "title": "Treating the Model as an Untrusted Component: Deterministic Policy Enforcement, Human Approval and Taint Tracking Against Prompt Injection in Tool-Using Agents, with Validation on Open-Weights Models",
+              "url": "https://arxiv.org/abs/2611.11571v1",
+              "published": "2026-11-08T19:33:25Z"
+            },
+            {
+              "id": "2611.11506v1",
+              "title": "On the Relative Security of Prompt Injection: Mechanised Definitions, Defences and Verdicts for LLM Agents",
+              "url": "https://arxiv.org/abs/2611.11506v1",
+              "published": "2026-11-08T17:20:48Z"
+            },
+            {
+              "id": "2611.11438v1",
+              "title": "When Coding Agents Get Arms: Safety Risks Across the Digital-Physical Boundary",
+              "url": "https://arxiv.org/abs/2611.11438v1",
+              "published": "2026-11-08T15:02:47Z"
+            },
+            {
+              "id": "2611.11305v1",
+              "title": "Least-Privilege Auditing of Agent Tool Calls with Intent Graphs and Reasoning-Guided Escalation",
+              "url": "https://arxiv.org/abs/2611.11305v1",
+              "published": "2026-11-08T11:05:45Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [
+        "2611.12856v1",
+        "2611.12835v1",
+        "2611.12256v1"
+      ],
+      "links_in_source": true,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "57b907bc2eaa48d28e30134aaf2e480a",
+      "job_id": "d746a6ed2eff",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T21:22:14.519314+03:00",
+      "started_at": "2026-11-10T21:22:14.537731+03:00",
+      "finished_at": "2026-11-10T21:22:25.699912+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-10T18:21:27.703451+00:00",
+      "progress_at": null,
+      "duration_seconds": 11.162,
+      "session": {
+        "id": "local-095a894e76eef4fc588eb75c278a8408b23efd0689f6a7b3833c8b0c58bec1a0",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794334934.548209,
+        "last_activity_at": 1794334941.3701499,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 10444,
+        "output_tokens": 308,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems\nНазвание: WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems\nДата: 2026-11-09T18:45:28Z\nСсылка: https://arxiv.org/abs/2611.12856v1\nТема: LLM-агенты и инструменты\n\nMitigating Agentic Deception via Evaluation-Side Partially Observable Games\nНазвание: Mitigating Agentic Deception via Evaluation-Side Partially Observable Games\nДата: 2026-11-09T18:33:13Z\nСсылка: https://arxiv.org/abs/2611.12835v1\nТема: Безопасность агентов\n\nSafe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards\nНазвание: Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards\nДата: 2026-11-09T17:14:40Z\nСсылка: https://arxiv.org/abs/2611.12728v1\nТема: Публикация исследований",
+      "sources": [
+        {
+          "source_sha256": "ba7ca4f4b7e2a7abceae9683c974d0e1ec6a0ba7321ca1bd92035670c5e53bf3",
+          "folder": "20261110T182221",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 16,
+          "excluded_ids": [],
+          "papers": [
+            {
+              "id": "2611.12856v1",
+              "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2611.12856v1",
+              "published": "2026-11-09T18:45:28Z"
+            },
+            {
+              "id": "2611.12835v1",
+              "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+              "url": "https://arxiv.org/abs/2611.12835v1",
+              "published": "2026-11-09T18:33:13Z"
+            },
+            {
+              "id": "2611.12728v1",
+              "title": "Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards",
+              "url": "https://arxiv.org/abs/2611.12728v1",
+              "published": "2026-11-09T17:14:40Z"
+            },
+            {
+              "id": "2611.12545v1",
+              "title": "Teamknitt: Configuring, Observing and Intervening in LLM-Agent Teams through the Lens of Dynamical-Systems and Human-Team Theory",
+              "url": "https://arxiv.org/abs/2611.12545v1",
+              "published": "2026-11-09T15:15:39Z"
+            },
+            {
+              "id": "2611.12412v1",
+              "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+              "url": "https://arxiv.org/abs/2611.12412v1",
+              "published": "2026-11-09T13:43:52Z"
+            },
+            {
+              "id": "2611.12256v1",
+              "title": "Predictability of Collective Behavior in Networks of LLM Agents",
+              "url": "https://arxiv.org/abs/2611.12256v1",
+              "published": "2026-11-09T11:47:33Z"
+            },
+            {
+              "id": "2611.12222v1",
+              "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+              "url": "https://arxiv.org/abs/2611.12222v1",
+              "published": "2026-11-09T11:16:03Z"
+            },
+            {
+              "id": "2611.12167v1",
+              "title": "FraudBench: A Legal Evaluation of AI Deception",
+              "url": "https://arxiv.org/abs/2611.12167v1",
+              "published": "2026-11-09T10:22:25Z"
+            },
+            {
+              "id": "2611.12521v1",
+              "title": "Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models",
+              "url": "https://arxiv.org/abs/2611.12521v1",
+              "published": "2026-11-09T14:58:53Z"
+            },
+            {
+              "id": "2611.12386v1",
+              "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+              "url": "https://arxiv.org/abs/2611.12386v1",
+              "published": "2026-11-09T13:27:13Z"
+            },
+            {
+              "id": "2611.11971v1",
+              "title": "Harness Matters: Measuring and Dissecting Security Resilience in Web Agents",
+              "url": "https://arxiv.org/abs/2611.11971v1",
+              "published": "2026-11-09T06:53:04Z"
+            },
+            {
+              "id": "2611.11861v1",
+              "title": "Scaling Adaptive Prompt Injection Attacks with Agent Swarms",
+              "url": "https://arxiv.org/abs/2611.11861v1",
+              "published": "2026-11-09T04:34:14Z"
+            },
+            {
+              "id": "2611.11571v1",
+              "title": "Treating the Model as an Untrusted Component: Deterministic Policy Enforcement, Human Approval and Taint Tracking Against Prompt Injection in Tool-Using Agents, with Validation on Open-Weights Models",
+              "url": "https://arxiv.org/abs/2611.11571v1",
+              "published": "2026-11-08T19:33:25Z"
+            },
+            {
+              "id": "2611.11506v1",
+              "title": "On the Relative Security of Prompt Injection: Mechanised Definitions, Defences and Verdicts for LLM Agents",
+              "url": "https://arxiv.org/abs/2611.11506v1",
+              "published": "2026-11-08T17:20:48Z"
+            },
+            {
+              "id": "2611.11438v1",
+              "title": "When Coding Agents Get Arms: Safety Risks Across the Digital-Physical Boundary",
+              "url": "https://arxiv.org/abs/2611.11438v1",
+              "published": "2026-11-08T15:02:47Z"
+            },
+            {
+              "id": "2611.11305v1",
+              "title": "Least-Privilege Auditing of Agent Tool Calls with Intent Graphs and Reasoning-Guided Escalation",
+              "url": "https://arxiv.org/abs/2611.11305v1",
+              "published": "2026-11-08T11:05:45Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [
+        "2611.12856v1",
+        "2611.12835v1",
+        "2611.12728v1"
+      ],
+      "links_in_source": true,
+      "selected_at_most_five": true
+    },
+    {
+      "id": "0630335f12984bb3ae274c4c9198d6be",
+      "job_id": "d746a6ed2eff",
+      "source": "builtin",
+      "process_id": "b6f5b3b5c03c4aaaaca79b0ff25cff6d",
+      "pid": 181,
+      "process_started_at": 247564,
+      "status": "completed",
+      "handoff_pending": 0,
+      "handoff_started_at": null,
+      "claimed_at": "2026-11-10T21:24:14.519906+03:00",
+      "started_at": "2026-11-10T21:24:14.540543+03:00",
+      "finished_at": "2026-11-10T21:24:25.703550+03:00",
+      "error": null,
+      "delivery_outcome": "delivered",
+      "scheduled_instant": "2026-11-10T18:23:25.695149+00:00",
+      "progress_at": null,
+      "duration_seconds": 11.163,
+      "session": {
+        "id": "local-b30fc9327d643031a77bc06e34c73eca01cd6b99c00ac88db245ab2ee69322c6",
+        "source": "cron",
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "started_at": 1794335054.551668,
+        "last_activity_at": 1794335061.344105,
+        "api_call_count": 1,
+        "tool_call_count": 0,
+        "input_tokens": 10443,
+        "output_tokens": 299,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 0,
+        "estimated_cost_usd": 0.0
+      },
+      "response": "Разбор аннотаций и отбор статей под темы из памяти:\n\n**Тема: LLM-агенты и инструменты**\n- **Название:** WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems\n- **Дата:** 2026-11-09T18:45:28Z\n- **Ссылка:** https://arxiv.org/abs/2611.12856v1\n\n**Тема: Безопасность агентов**\n- **Название:** Mitigating Agentic Deception via Evaluation-Side Partially Observable Games\n- **Дата:** 2026-11-09T18:33:13Z\n- **Ссылка:** https://arxiv.org/abs/2611.12835v1\n\n**Тема: Публикация исследований**\n- **Название:** PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment\n- **Дата:** 2026-11-09T11:16:03Z\n- **Ссылка:** https://arxiv.org/abs/2611.12222v1",
+      "sources": [
+        {
+          "source_sha256": "f4651689ecaa5c678c8b9655eb9c1d35049edf4e3ad0580d87e889e4b9e8f926",
+          "folder": "20261110T182421",
+          "status": "ok",
+          "received": 16,
+          "passed_to_model": 16,
+          "excluded_ids": [],
+          "papers": [
+            {
+              "id": "2611.12856v1",
+              "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2611.12856v1",
+              "published": "2026-11-09T18:45:28Z"
+            },
+            {
+              "id": "2611.12835v1",
+              "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+              "url": "https://arxiv.org/abs/2611.12835v1",
+              "published": "2026-11-09T18:33:13Z"
+            },
+            {
+              "id": "2611.12728v1",
+              "title": "Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards",
+              "url": "https://arxiv.org/abs/2611.12728v1",
+              "published": "2026-11-09T17:14:40Z"
+            },
+            {
+              "id": "2611.12545v1",
+              "title": "Teamknitt: Configuring, Observing and Intervening in LLM-Agent Teams through the Lens of Dynamical-Systems and Human-Team Theory",
+              "url": "https://arxiv.org/abs/2611.12545v1",
+              "published": "2026-11-09T15:15:39Z"
+            },
+            {
+              "id": "2611.12412v1",
+              "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+              "url": "https://arxiv.org/abs/2611.12412v1",
+              "published": "2026-11-09T13:43:52Z"
+            },
+            {
+              "id": "2611.12256v1",
+              "title": "Predictability of Collective Behavior in Networks of LLM Agents",
+              "url": "https://arxiv.org/abs/2611.12256v1",
+              "published": "2026-11-09T11:47:33Z"
+            },
+            {
+              "id": "2611.12222v1",
+              "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+              "url": "https://arxiv.org/abs/2611.12222v1",
+              "published": "2026-11-09T11:16:03Z"
+            },
+            {
+              "id": "2611.12167v1",
+              "title": "FraudBench: A Legal Evaluation of AI Deception",
+              "url": "https://arxiv.org/abs/2611.12167v1",
+              "published": "2026-11-09T10:22:25Z"
+            },
+            {
+              "id": "2611.12521v1",
+              "title": "Can the Confidence and Decisions of System 1 Models Be Trusted? An Explainability and Perturbation Audit of Jev-Style Decision Models",
+              "url": "https://arxiv.org/abs/2611.12521v1",
+              "published": "2026-11-09T14:58:53Z"
+            },
+            {
+              "id": "2611.12386v1",
+              "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+              "url": "https://arxiv.org/abs/2611.12386v1",
+              "published": "2026-11-09T13:27:13Z"
+            },
+            {
+              "id": "2611.11971v1",
+              "title": "Harness Matters: Measuring and Dissecting Security Resilience in Web Agents",
+              "url": "https://arxiv.org/abs/2611.11971v1",
+              "published": "2026-11-09T06:53:04Z"
+            },
+            {
+              "id": "2611.11861v1",
+              "title": "Scaling Adaptive Prompt Injection Attacks with Agent Swarms",
+              "url": "https://arxiv.org/abs/2611.11861v1",
+              "published": "2026-11-09T04:34:14Z"
+            },
+            {
+              "id": "2611.11571v1",
+              "title": "Treating the Model as an Untrusted Component: Deterministic Policy Enforcement, Human Approval and Taint Tracking Against Prompt Injection in Tool-Using Agents, with Validation on Open-Weights Models",
+              "url": "https://arxiv.org/abs/2611.11571v1",
+              "published": "2026-11-08T19:33:25Z"
+            },
+            {
+              "id": "2611.11506v1",
+              "title": "On the Relative Security of Prompt Injection: Mechanised Definitions, Defences and Verdicts for LLM Agents",
+              "url": "https://arxiv.org/abs/2611.11506v1",
+              "published": "2026-11-08T17:20:48Z"
+            },
+            {
+              "id": "2611.11438v1",
+              "title": "When Coding Agents Get Arms: Safety Risks Across the Digital-Physical Boundary",
+              "url": "https://arxiv.org/abs/2611.11438v1",
+              "published": "2026-11-08T15:02:47Z"
+            },
+            {
+              "id": "2611.11305v1",
+              "title": "Least-Privilege Auditing of Agent Tool Calls with Intent Graphs and Reasoning-Guided Escalation",
+              "url": "https://arxiv.org/abs/2611.11305v1",
+              "published": "2026-11-08T11:05:45Z"
+            }
+          ]
+        }
+      ],
+      "selected_ids": [
+        "2611.12856v1",
+        "2611.12835v1",
+        "2611.12222v1"
+      ],
+      "links_in_source": true,
+      "selected_at_most_five": true
+    }
+  ],
+  "checks": [
+    {
+      "file": "file-fixed-usage.json",
+      "data": {
+        "estimated_cost_usd": 0.0,
+        "cost_status": "unknown",
+        "cost_source": "provider_models_api",
+        "input_tokens": 38093,
+        "output_tokens": 269,
+        "cache_read_tokens": 12576,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 155,
+        "total_tokens": 38362,
+        "api_calls": 3,
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "provider": "openrouter",
+        "session_id": "local-0f46a85fe98540ce6fcf19d389d89eb3d72ecc44ab3afa0aaa65797716127571",
+        "completed": true,
+        "partial": false,
+        "interrupted": false,
+        "turn_exit_reason": "text_response(finish_reason=stop)",
+        "failed": false,
+        "service_tier": null,
+        "auxiliary": {
+          "api_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0,
+          "total_tokens": 0,
+          "by_task": {}
+        },
+        "total_including_auxiliary": {
+          "estimated_cost_usd": 0.0,
+          "total_tokens": 38362,
+          "api_calls": 3
+        }
+      }
+    },
+    {
+      "file": "tools-usage.json",
+      "data": {
+        "estimated_cost_usd": 0.0,
+        "cost_status": "unknown",
+        "cost_source": "provider_models_api",
+        "input_tokens": 109736,
+        "output_tokens": 1262,
+        "cache_read_tokens": 83840,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 643,
+        "total_tokens": 110998,
+        "api_calls": 6,
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "provider": "openrouter",
+        "session_id": "local-2e4288cd3846f85979bd58c74356b1f8e5c6d60cf05031fd6132067d70b147a7",
+        "completed": true,
+        "partial": false,
+        "interrupted": false,
+        "turn_exit_reason": "text_response(finish_reason=stop)",
+        "failed": false,
+        "service_tier": null,
+        "auxiliary": {
+          "api_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0,
+          "total_tokens": 0,
+          "by_task": {}
+        },
+        "total_including_auxiliary": {
+          "estimated_cost_usd": 0.0,
+          "total_tokens": 110998,
+          "api_calls": 6
+        }
+      }
+    },
+    {
+      "file": "memory-free-usage.json",
+      "data": {
+        "estimated_cost_usd": 0.0,
+        "cost_status": "estimated",
+        "cost_source": "provider_models_api",
+        "input_tokens": 13122,
+        "output_tokens": 111,
+        "cache_read_tokens": 0,
+        "cache_write_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 13233,
+        "api_calls": 1,
+        "model": "nvidia/nemotron-3.5-lightning:free",
+        "provider": "openrouter",
+        "session_id": "local-5b896ed15a1be5a5f84aea1626f273f6dd0d94c167a8a8205dbdd93b0bef6b3c",
+        "completed": true,
+        "partial": false,
+        "interrupted": false,
+        "turn_exit_reason": "text_response(finish_reason=stop)",
+        "failed": false,
+        "service_tier": null,
+        "auxiliary": {
+          "api_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0,
+          "total_tokens": 0,
+          "by_task": {}
+        },
+        "total_including_auxiliary": {
+          "estimated_cost_usd": 0.0,
+          "total_tokens": 13233,
+          "api_calls": 1
+        }
+      }
+    },
+    {
+      "file": "memory-usage.json",
+      "data": {
+        "estimated_cost_usd": null,
+        "cost_status": null,
+        "cost_source": null,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cache_read_tokens": null,
+        "cache_write_tokens": null,
+        "reasoning_tokens": null,
+        "total_tokens": null,
+        "api_calls": 1,
+        "model": "google/gemini-2.5-flash",
+        "provider": "openrouter",
+        "session_id": "local-449846e9ae8c2a1527e8cbbd9852e9d411b3b0cab81ad5f3dc822b2f5c894b5e",
+        "completed": false,
+        "partial": false,
+        "interrupted": false,
+        "turn_exit_reason": null,
+        "failed": true,
+        "service_tier": null,
+        "auxiliary": {
+          "api_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "reasoning_tokens": 0,
+          "estimated_cost_usd": 0,
+          "total_tokens": 0,
+          "by_task": {}
+        },
+        "total_including_auxiliary": {
+          "estimated_cost_usd": null,
+          "total_tokens": 0,
+          "api_calls": 1
+        },
+        "failure": "HTTP 402: This request requires more credits, or fewer max_tokens. You requested up to 65535 tokens, but can only afford 3550. To increase, visit https://openrouter.ai/workspaces/default/keys/87b068e3d5c6bd625682e74f244621c025dc2e724fb922f564013ea251e2c6fb and adjust the key's total limit"
+      }
+    }
+  ],
+  "telegram_sessions": [
+    {
+      "id": "20261110_000034_0154c1be",
+      "source": "telegram",
+      "model": "nvidia/nemotron-3.5-lightning:free",
+      "started_at": 1794258034.4898736,
+      "last_activity_at": 1794304274.7256618,
+      "api_call_count": 5,
+      "tool_call_count": 0,
+      "input_tokens": 32279,
+      "output_tokens": 775,
+      "cache_read_tokens": 37728,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 441,
+      "estimated_cost_usd": 0.0
+    }
+  ]
+}

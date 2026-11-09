@@ -1,0 +1,11 @@
+/home/agent/hermes-data/logs/*.log {
+    daily
+    rotate 7
+    maxage 7
+    maxsize 5M
+    missingok
+    notifempty
+    compress
+    copytruncate
+    su agent agent
+}

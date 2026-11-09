@@ -1,0 +1,23 @@
+model:
+  provider: openrouter
+  default: nvidia/nemotron-3.5-lightning:free
+  base_url: https://openrouter.ai/api/v1
+agent:
+  max_turns: 12
+  reasoning_effort: none
+terminal:
+  backend: local
+  cwd: /opt/data/workspace
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+auxiliary:
+  compression:
+    provider: openrouter
+    model: nvidia/nemotron-3.5-lightning:free
+  background_review:
+    enabled: false
+  title_generation:
+    enabled: false
+platform_toolsets:
+  cron: []

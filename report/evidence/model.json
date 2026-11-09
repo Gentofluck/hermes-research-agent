@@ -1,0 +1,24 @@
+{
+  "id": "nvidia/nemotron-3.5-lightning:free",
+  "context_length": 1000000,
+  "pricing": {
+    "prompt": "0",
+    "completion": "0"
+  },
+  "supported_parameters": [
+    "include_reasoning",
+    "max_tokens",
+    "reasoning",
+    "seed",
+    "temperature",
+    "tool_choice",
+    "tools",
+    "top_p"
+  ],
+  "top_provider": {
+    "context_length": 1000000,
+    "max_completion_tokens": 65536,
+    "is_moderated": false
+  },
+  "checked_at": "2026-11-10"
+}

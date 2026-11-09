@@ -1,0 +1,22 @@
+services:
+  hermes-agent:
+    image: nousresearch/hermes-agent@sha256:adb7890916de63245523492be8f68f9d2095fecbec4e2a6dab7960381f0fc002
+    container_name: hermes_agent
+    restart: unless-stopped
+    command: [gateway, run]
+    working_dir: /opt/data/workspace
+    volumes:
+      - ${HERMES_DATA:-./data}:/opt/data
+    environment:
+      HERMES_UID: ${HERMES_UID:-1000}
+      HERMES_GID: ${HERMES_GID:-1000}
+      TZ: Europe/Moscow
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: ${HERMES_MEM_LIMIT:-1200m}
+    pids_limit: 512
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '5'
