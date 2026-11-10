@@ -1,0 +1,6 @@
+Проверка доступа с постороннего Telegram-аккаунта, 10 ноября 2026 года.
+Время журнала — Europe/Moscow (UTC+03:00).
+Чужие идентификаторы пользователя и чата заменены на [REDACTED].
+
+2026-11-10 22:31:34,220 WARNING hermes_plugins.platforms__telegram.adapter: [Telegram] Blocked unauthorized user [REDACTED] in chat [REDACTED]
+2026-11-10 22:31:41,156 WARNING hermes_plugins.platforms__telegram.adapter: [Telegram] Blocked unauthorized user [REDACTED] in chat [REDACTED]
