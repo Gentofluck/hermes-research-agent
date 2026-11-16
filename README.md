@@ -32,3 +32,14 @@ Hermes Agent для исследовательских задач. Задани�
 ```bash
 docker compose run --rm hermes --version
 ```
+
+Мастер настройки запускается командой `docker compose run --rm hermes setup`. Конфигурация сохраняется в `data/config.yaml`, ключи в `data/.env`.
+
+Для запуска бота в фоне:
+
+```bash
+docker compose up -d
+docker compose logs -f
+```
+
+Бот: [@gentofluck_margin_bot](https://t.me/gentofluck_margin_bot). Доступ разрешён только моему Telegram ID.
