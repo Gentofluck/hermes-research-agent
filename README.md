@@ -17,4 +17,8 @@ Hermes Agent для исследовательских задач. Задани�
 
 ## Docker
 
-Используются Docker 29.9.3 и Docker Compose 5.7.1. Работа Docker проверена командой `docker run --rm hello-world`.
+На VPS используются Docker 29.9.3 и Docker Compose 5.7.1. Работа Docker проверена командой `docker run --rm hello-world`.
+
+## Модель
+
+Бесплатная `nvidia/nemotron-3.5-lightning:free` через OpenRouter. Контекст: 1 000 000 токенов. Лимит расходов ключа: $50 без автоматического сброса. Проверочный запрос выполнен успешно.
