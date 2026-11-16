@@ -21,25 +21,12 @@ Hermes Agent для исследовательских задач. Задани�
 
 ## Модель
 
-Бесплатная `nvidia/nemotron-3.5-lightning:free` через OpenRouter. Контекст: 1 000 000 токенов. Лимит расходов ключа: $50 без автоматического сброса. Проверочный запрос выполнен успешно.
+Бесплатная `nvidia/nemotron-3.5-lightning:free` через OpenRouter.
+Контекст: 1 000 000 токенов.
+Лимит расходов ключа: $50 без автоматического сброса.
 
 ## Контейнер
 
-Настройки запуска находятся в `compose.yaml`. Каталог `data/` подключается к `/opt/data` внутри контейнера: здесь Hermes хранит конфигурацию, память и навыки. Этот каталог и файл `.env` не попадают в Git.
-
-На Mac проверен запуск Hermes 0.23.0:
-
-```bash
-docker compose run --rm hermes --version
-```
-
-Мастер настройки запускается командой `docker compose run --rm hermes setup`. Конфигурация сохраняется в `data/config.yaml`, ключи в `data/.env`.
-
-Для запуска бота в фоне:
-
-```bash
-docker compose up -d
-docker compose logs -f
-```
+Hermes 0.23.0 работает в Docker-контейнере. Настройки и данные агента хранятся в папке `data/` и сохраняются при пересоздании контейнера.
 
 Бот: [@gentofluck_margin_bot](https://t.me/gentofluck_margin_bot). Доступ разрешён только моему Telegram ID.
