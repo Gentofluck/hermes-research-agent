@@ -1,0 +1,13 @@
+/opt/hermes-research-agent/data/logs/agent.log /opt/hermes-research-agent/data/logs/gateway.log /opt/hermes-research-agent/data/logs/errors.log {
+    daily
+    rotate 7
+    maxage 7
+    dateext
+    dateformat .%Y%m%d
+    missingok
+    notifempty
+    compress
+    delaycompress
+    create 0600 agent agent
+    su agent agent
+}

@@ -7,6 +7,8 @@ services:
     working_dir: /opt/data/workspace
     volumes:
       - ${HERMES_DATA:-./data}:/opt/data
+      - ./skills/paper-digest:/opt/data/skills/research/paper-digest:ro
+      - ./skills/paper-digest:/opt/data/scripts/paper-digest:ro
     environment:
       HERMES_UID: ${HERMES_UID:-1000}
       HERMES_GID: ${HERMES_GID:-1000}

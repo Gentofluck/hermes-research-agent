@@ -1,0 +1,12 @@
+[Unit]
+Description=Remove expired Hermes log archives
+
+[Service]
+Type=oneshot
+User=agent
+Group=agent
+ExecStart=/usr/bin/find /opt/hermes-research-agent/data/logs -type f -name *.log.[0-9]* -mtime +6 -delete
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/hermes-research-agent/data/logs
